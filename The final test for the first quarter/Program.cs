@@ -10,12 +10,11 @@ SamplingArrayElementsByLength();
 
 void SamplingArrayElementsByLength ()
 {
-    int num = 0;
-    string[] array = new string[num];
+    int j = 0;
+    string[] array = new string[j];  //Задаём исходный массив.
     array = ArraySelection(array);
     Console.WriteLine("Исходный массив  :   ");
     PrintArray(array);
-    int j = 0;
     bool flag = false;
     string[] sorted = new string[array.Length]; // Создаём новый массив.
     for (int i = 0; i < array.Length; i++) // Проверяем количество символов в элементах исходного массива.
@@ -56,7 +55,7 @@ int realsize = int.Parse ( Console.ReadLine ()! ) ;
 string[] array = new string [realsize ]; 
 for (int i = 0; i < realsize ; i ++ )
 {
-        Console.Write("Введите строку массива  :  ");
+        Console.Write("Введите строку массива , по окончании ввода нажмите ENTER  :  ");
         array[i] = (Console.ReadLine()!);
 }
 return array ;
@@ -70,10 +69,9 @@ string[] ReadyMadeArrayInBodyProgram()      // Готовый массив в т
 
 string[] ArraySelection (string[] arrayselection)    // Выбираем исходный массив.
 {
-    //int f = 0 ;
     Console.Write("Эта программа из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна трём символам.Если желаете ввести массив с клавиатуры введите 0, если использовать массив ,встроенный в тело программы , введите любую цифру от 1 до 9.   ");
-    var f = int.Parse(Console.ReadLine()!);
-    if (f == 0) { arrayselection = BildSizeArray(); }
+    var flag = int.Parse(Console.ReadLine()!);
+    if (flag == 0) { arrayselection = BildSizeArray(); }
     else  { arrayselection = ReadyMadeArrayInBodyProgram(); }
     return (arrayselection);
 }
