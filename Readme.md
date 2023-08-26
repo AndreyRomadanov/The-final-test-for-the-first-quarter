@@ -21,10 +21,10 @@
 ## *Cоставляем блок-схему алгоритма программы:*
  ![](images/Blockdiagprog.png)
 ## *Программа на языке C#  :*
-*SamplingArrayElementsByLength();
+* SamplingArrayElementsByLength();
 
-*void SamplingArrayElementsByLength ()
-*{
+* void SamplingArrayElementsByLength ()
+* {
 *    int j = 0;
 *    string[] array = new string[j];  //Задаём исходный массив.
 *    array = ArraySelection(array);  //Заполняем строками исходный массив.
