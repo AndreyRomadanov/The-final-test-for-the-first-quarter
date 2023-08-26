@@ -19,7 +19,7 @@
 * Формируется новый массив и выводится на экран.
 
 ## *Cоставляем блок-схему алгоритма программы:*
- ![](images/Blockdiagprog.png)
+ ![](/Blockdiagprog.png)
 ## *Программа на языке C#  :*
 * SamplingArrayElementsByLength();
 
